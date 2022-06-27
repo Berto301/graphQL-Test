@@ -2,6 +2,7 @@ import { MikroORM } from "@mikro-orm/core"; //Options
 import { Post } from "./entities/Post";
 import { __prod__ } from "./helper/constants";
 import path from "path";
+import { User } from "./entities/User";
 
 // const config : Options= {
 //     entities:[
@@ -20,7 +21,8 @@ export default {
       pattern:/^[\w-]+\d+\.[tj]s$/
     },
       entities:[
-        Post
+        Post,
+        User
     ],
     dbName:"test",
     user:"berto",
